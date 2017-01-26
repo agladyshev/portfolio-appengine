@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gladyshev: portfolio</title>
+    <link rel="icon" type="image/png" href="assets/img/png/udacity_logo.png">
+    <meta name="theme-color" content="#ceecf5">
+    <link rel="stylesheet" href="/assets/css/foundation.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/foundation-icons/foundation-icons.css">
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.min.js"></script>
+  </head>
+  <body>
+    <header class="row">
+      <div class="small-2 column">
+        <a href="//udacity.com">
+          <div class="logo">
+          </div>
+        </a>
+      </div>
+      <div class="small-10 column text-right uppercase">
+        <a href="/">
+          <h1 >Alexey Gladyshev</h1>
+          <h5>Front-End Ninja</h5>
+        </a>
+      </div>
+    </header>
+    <hr class="expanded row">
+    {% block content %}
+    
+    {% endblock %}
+    <footer id="social" class="row text-center">
+        <hr class="row column">
+        <div class="small-12 large-8 column" >
+          <div class="row small-up-2 large-up-4">
+            <div class="column">
+              <a class="fi-social-facebook" href="//facebook.com/profile.php?id=100010168684021" title="View my Facebook page" id="viewFacebook" target="_blank"> Facebook</a>
+              <div id="social__facebook" class="hide" data-toggler=".hide">
+                <p>We still could be friends, right?</p>
+              </div>
+            </div>
+            <div class="column">
+              <a class="fi-social-linkedin" href="//linkedin.com/" title="View my LinkedIn page" id="viewLinkedin" target="_blank"> LinkedIn</a>
+              <div id="social__linkedin" class="hide" data-toggler=".hide">
+                <p>More on my previous experience.</p>
+              </div>
+            </div>
+            <div class="column">
+              <a class="fi-social-github" href="//github.com/agladyshev" title="View my GitHub page" id="viewGithub" target="_blank"> GitHub</a>
+              <div id="social__github" class="hide" data-toggler=".hide">
+                <p>Source code of all the projects I work on.</p>
+              </div>
+            </div>
+            <div class="column">
+              <a class="link-hover" href="https://profiles.udacity.com/u/alexeygladyshev" title="View my Udacity page" id="viewUdacity" target="_blank">
+                <!--SVG image is used inline to get an access to its internal properties, fill color here. Color changes when we hover the mouse over the icon. This way, svg fully imitates font icon behaviour.-->
+                <svg id="svg1" viewBox="0 -8 35 35" width="1rem" height="1.2rem">
+                  <path class="icon-hover" fill="#000000" fill-rule="evenodd" d="M29 .1l-9 4.7v14.9c0 .6 0 1.3-.2 1.9-.1.6-.3 1.2-.5 1.7-.1.1-.1.3-.2.4-.3 0-2.5-.7-3.5-1.4-.4-.3-.8-.6-1.2-1-.4-.4-.7-.8-1-1.2-.3-.4-.6-.9-.8-1.4-.2-.5-.4-1-.5-1.6-.1-.5-.1-1.1-.1-1.6V1.2L10 0 0 5.9v13.7C0 25.9 5.1 31 11.3 31c2.1 0 4-.5 5.7-1.5l8.4-4.8c3.3-1.7 5.6-5.2 5.6-9.1V1.3L29 .1zM17.9 26.2c-.9.9-1.6 1.4-2.6 1.9-.6.2-1.3.5-1.9.7-.6.1-1.2.2-1.8.2-.6 0-1.6-.1-2.2-.2-.6-.1-1.2-.3-1.7-.5s-1.1-.5-1.6-.9c-1.3-.9-1.9-1.7-2.5-2.5-.3-.5-.6-1-.9-1.6-.2-.6-.4-1.1-.5-1.7-.2-.7-.2-1.4-.2-2V7.1l8-4.7v13.1c0 5 3.7 9.1 8.4 10.1-.2.2-.3.4-.5.6zm11-9c-.1.5-.3 1-.5 1.5s-.6 1.2-1 1.7c-.6.7-1.2 1.2-2.7 2.1-1.3.7-2.4.9-3.1 1.1.5-1.2.5-2.5.5-3.9L22 6l7-3.7v13.3c0 .5 0 1.1-.1 1.6z"/>
+                </svg>
+                Udacity
+              </a>
+              <div id="social__udacity" class="hide" data-toggler=".hide">
+                <p>Check out my profile page with all my credentials.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="small-12 large-4 column end text-center">
+          <span>Source for this page on</span>
+          <a class="fi-social-github" href="//github.com/agladyshev/multi-user-blog" title="View source for this page on GitHub" target="_blank"></a>
+        </div>
+        <div id="social__email" class="small-12 column text-center hide" data-toggler=".hide">
+          <hr>
+          <a class="label" href="mailto:alexey0gladyshev@gmail.com">Address directly <i class="fi-mail"></i></a>  
+        </div>
+      </footer>
+    <script src="/assets/js/app.js"></script>
+  </body>
+</html>
+

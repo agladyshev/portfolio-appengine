@@ -1,0 +1,110 @@
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-weight: 200;
+  line-height: 0.8;
+}
+
+header {
+  padding-top: 2rem;
+}
+
+nav {
+  background-image: linear-gradient( white, #ceecf5);
+}
+
+footer {
+  padding-bottom: 2rem;
+}
+
+a {
+  color: black;
+}
+
+.logo {
+  width: 8vw;
+  height: 8vw;
+  max-width: 75px;
+  max-height: 75px;
+  background: url(../img/png/udacity_logo.png);
+  background-image: url(../img/udacity_logo_min.svg);
+  background-size: cover;
+}
+
+.bio {
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+  background-image: linear-gradient(#ceecf5, white);
+}
+
+.banner {
+  height: 40vw;
+  background: url(../img/png/mountains.png);
+  background-image: url(../img/mountains_min.svg);
+  background-size: cover;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.link-hover:hover .icon-hover {
+  fill: #02b3e4;
+  /*change the color of svg path in icon on mouse hover*/
+    /*CSS validator will throw an error, because svg properties
+    are not yet included to CSS*/
+  }
+
+  @media screen and (max-width: 639px) {
+    h1 {
+      font-size: 1.4rem;
+    }
+
+    .project:last-of-type {
+      padding-bottom: 0em;
+    }
+
+    .project-desc {
+      padding-top: 0.5em;
+    }
+
+  }
+
+  @media screen and (min-width: 640px) and (max-width: 1023px) {
+    .project-desc {
+      text-align: left;
+    }
+
+    .project {
+      padding-left: 4vw;
+      padding-right: 4vw;
+    }
+
+  }
+
+  @media screen and (min-width: 1024px) {
+    body {
+      font-size: 20px;
+    }
+
+    footer {
+      font-size: 16px;
+    }
+
+    .banner {
+      height: 30vw;
+      background: url(../img/png/mountains_wide_2x.png);
+      background-image: url(../img/mountains_min.svg);
+      background-size: cover;
+    }
+
+    .project {
+      padding-bottom: 5rem;
+    }
+    
+    .project:last-of-type {
+      padding-bottom: 2rem;
+    }
+  }

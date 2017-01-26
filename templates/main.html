@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<nav class="row expanded">
+  <!--row is expanded to full vw to place gradient-->
+  <div class="row">
+    <!--div takes 100% width, so we use row class with max-width 1200px to center content-->
+
+    <ul class="menu small-12 column simple">
+      <li><a href="/about">About me</a></li>
+      <li><a href="#social" data-toggle="social__udacity social__facebook social__github social__linkedin social__email">Contacts</a></li>
+    </ul>
+
+  </div>
+</nav>
+<div class="expanded row collapse">
+  <div class="banner small-12 column"></div>
+</div>
+<main>
+  <div id="projects" class="row column">
+    <!--id="projects" is used as a pointer for the menu link-->
+    <h2 class="subheader">Featured Work</h2>
+  </div>
+  <section class="row small-up-1 medium-up-2 large-up-1 projects">
+    <div class="column column-block project">
+      <div class="row">
+        <div class="small-8 medium-12 large-6 column project-pic">
+          <picture>
+            <source
+            type="image/svg+xml" 
+            srcset="assets/img/basket.svg">
+            <img
+            src="assets/img/png/basket.png"
+            alt="Large basket with groceries">
+          </picture>
+        </div>
+        <div class="small-12 medium-12 large-6 column text-right project-desc">
+          <h3>Item catalog</h3>
+          <p class="full-desc">
+            If you are sick and tired of ol' generic website builders and want to try something new, make your project fully adapted for you and your customers' needs.
+          </p>
+          <p>Harness the power of a made-by-measure catalog in a conversion rate pursuit.</p>
+          <p>
+            Just harness it on <a class="fi-social-github" href="//github.com/agladyshev/Item-catalog" title="Just harness it on GitHub" target="_blank"></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="column column-block project">
+      <div class="row">
+        <div class="small-push-4 small-8 medium-push-0 medium-12 large-6 large-push-6 column project-pic">
+          <picture class="project-pic">
+            <source
+              type="image/svg+xml"
+              srcset="assets/img/bald_coffee.svg">
+            <img
+              src="assets/img/png/bald_coffee.png"
+              alt="Nice bald man is drinking coffee and smiling at you.">
+          </picture>
+        </div>
+        <div class="small-12 medium-12 large-6 large-pull-6 column project-desc">
+          <h3>Coffee map</h3>
+          <p class="full-desc">
+            Looking for a quick shot of espresso nearby?<br>Or are you more of a brew-bar type? <br>Whatever you're after, a flat white to go or a new issue of the Standart mag: you'll get it.
+          </p>
+          <p>Essential map for the essential need.<br>All the specialty men.</p>
+          <p>
+            Moscow coffee map on <a class="fi-social-github" href="//github.com/agladyshev/Moscow-coffee-map" title="Just harness it on GitHub" target="_blank"></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="column column-block project">
+      <div class="row">
+        <div class="small-9 medium-push-0 medium-12 large-6 column project-pic">
+          <picture >
+            <source
+              type="image/svg+xml" 
+              srcset="assets/img/parry.svg">
+            <img
+              src="assets/img/png/parry.png"
+              alt="Two fencers fencing ferociously">
+          </picture>
+        </div>
+        <div class="large-6 column text-right project-desc">
+          <h3>Swiss tournament</h3>
+          <p class="full-desc">
+            Interactive software for holding a swiss-system competition. Different sports, differrent leagues, matches, players and ton of other features.
+          </p>
+          <p>Sit back, relax and enjoy the program doing all the hard work.</p>
+          <p>
+            Swiss tournament on <a class="fi-social-github" href="//github.com/agladyshev/IPND-BackEnd-Tournament" title="View source for this page on GitHub" target="_blank"></a>
+          </p>
+        </div>
+      </div>
+    </div>
+      <div class="column column-block project">
+        <div class="row">
+          <div class="large-6 large-push-6 column project-pic">
+            <picture>
+                <source
+                  type="image/svg+xml"
+                  media="(min-width: 624px) and (max-width:1023px)"
+                  srcset="assets/img/two_devils_centered.svg">
+                <source
+                  type="image/svg+xml"
+                  srcset="assets/img/two_devils.svg">
+                <img
+                  src="assets/img/png/two_devils.png"
+                  alt="Two devils playing with fire">
+            </picture>
+          </div>
+          <div class="project-desc large-pull-6 large-6 column">
+            <a href="//suchgreatbloge.appspot.com"><h3>Multi User Blog <i class="fi-link"></i></h3></a>
+            <p class="full-desc">Passion, community, identity.</p>
+            <p>
+              Let's be honest: who doesn't want to have a nice blog nowadays? Invite your friends to join the party.
+            </p>
+            <p>
+              Such Great Bloge on <a class="fi-social-github" href="//github.com/agladyshev/multi-user-blog" title="View source for this page on GitHub" target="_blank"></a>  
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+</main>
+{% endblock %}
